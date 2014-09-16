@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script language=javascript>
+<!--
+function OnSub() {
+	document.form1.action = "onlineCompiler.php";
+	document.form1.target = "menu";
+	document.form1.submit();
+	
+	document.form1.action = "emptyFrame.php";
+	document.form1.target = "content";
+	document.form1.submit();
+	return true;
+}
+-->
+</script>
+<style>
+body {
+	background-color:#D5D1D1;
+}
+</style>
+</head>
+<body>
+<table border = 0 align=center>
+<tr align="center">
+<td><center><h2 style="font-family: monospace;">e-Compiler for </h2></center></td>
+<td align="left">
+<form name="form1" method="post" action="" target="">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="compiler_list" onchange="OnSub();">
+	<option value="" selected="selected">Please select Language</option>
+    <option value="Isee">C</option>
+    <option value="IseeWithClass">C++</option>
+	<option value="oopsJava">Java(Single Class only)</option>
+</select>
+<noscript><input type="submit" value="Submit"></noscript>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
