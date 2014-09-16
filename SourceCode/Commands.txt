@@ -1,0 +1,17 @@
+gcc -c file.c
+g++ -c file.cpp
+
+gcc file.c -o output.o
+g++ file.cpp -o output.o
+
+gcc -Wall file.c -o output.o
+g++ -Wall file.cpp -o output.o // Better warnings
+
+----------------------------------------
+
+gdb file.c(pp) //Debugger
+
+----------------------------------------
+
+javac filename.java
+java filename   //class file
